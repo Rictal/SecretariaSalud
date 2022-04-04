@@ -15,18 +15,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <img src="\src\main\java\Imagenes\secretaria_salud.jpg" alt="">
+    <img src="\src\main\java\Imagenes\secretaria_salud.jpg" alt="secretaria">
     <h1>Sistema de acceso dactilar - Habitantes</h1>
     <h2>Ingrese su huella en el dispositivo para obtener acceso</h2>
     <p>Carla Morrison</p>
-    <img src="imagenes/km.jpg" alt="logo_imss" id="km">
-    <div>
-        <!-- NSS -->
-        <br>
-        <label for="name">NSS:</label>
-        <input type="text">
-    </div>
-    <button id="btnCancelar">Cancelar</button>
-    <button id="btnAceptar">Acceder</button>
+    <img src="imagenes/km.jpg" alt="foto_Carla" id="km">
 </body>
 </html>
