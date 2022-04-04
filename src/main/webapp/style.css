@@ -1,0 +1,15 @@
+h2{
+    color: forestgreen;
+}
+#btnCancelar{
+    border-radius: 1cm;
+    background-color:brown ;
+}
+#btnAceptar{
+    border-radius: 1cm;
+    background-color: rgb(33, 175, 80);
+}
+#km{
+    height: 150px;
+    width: 150x;
+}
