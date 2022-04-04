@@ -20,5 +20,7 @@
     <h2>Ingrese su huella en el dispositivo para obtener acceso</h2>
     <p>Carla Morrison</p>
     <img src="imagenes/km.jpg" alt="foto_Carla" id="km">
+    <br>
+    <button>Solicitar Acceso</button>
 </body>
 </html>
