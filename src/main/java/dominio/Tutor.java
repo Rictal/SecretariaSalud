@@ -1,4 +1,4 @@
-package Dominio;
+package dominio;
 
 import java.io.File;
 
@@ -8,4 +8,8 @@ public class Tutor extends Persona{
     private String direccion;
     private int edad;
     private File datoBiometrico;
+
+    public Tutor() {
+    }
+    
 }

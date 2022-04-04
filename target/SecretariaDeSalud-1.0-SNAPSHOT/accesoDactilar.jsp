@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <img src="\src\main\java\Imagenes\secretaria_salud.jpg" alt="secretaria">
+    <img src="img\secretaria_salud.jpg" alt="secretaria">
     <h1>Sistema de acceso dactilar - Habitantes</h1>
     <h2>Ingrese su huella en el dispositivo para obtener acceso</h2>
     <p>Carla Morrison</p>

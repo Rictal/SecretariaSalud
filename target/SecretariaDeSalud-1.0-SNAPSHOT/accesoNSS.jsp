@@ -20,7 +20,7 @@
     <img src="imagenes/secretaria_salud.jpg" alt="">
     <h1>Sistema de acceso dactilar - Habitantes</h1>
     <h2>Ingrese el número de seguro social del <br>habitante, para consultar su expediente</h2>
-    <img src="imagenes/logo_imss.png" alt="logo_imss">
+    <img src="img/logo_imss.png" alt="logo_imss">
     <div>
         <!-- NSS -->
         <br>
