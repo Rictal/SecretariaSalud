@@ -11,14 +11,23 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import persistencia.HabitanteAPIRest;
+import persistencia.IHabitantesAPIRest;
 
 public class consultaExpediente extends HttpServlet {
 
-    HabitanteAPIRest habitantesApi;
+    IHabitantesAPIRest habitantesApi;
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        HttpSession session = request.getSession();
+        habitantesApi = new HabitanteAPIRest();   
+        Habitante hb = new Habitante();
+        
+        hb = habitantesApi.consultarPorId(1L);
+        System.out.println(hb);
+        session.setAttribute("habitante", hb);
+        response.sendRedirect("consultaExpediente.jsp");
     }
 
 // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -48,14 +57,6 @@ public class consultaExpediente extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
-
-        HttpSession session = request.getSession();
-
-        Habitante hb = new Habitante();
-        hb = habitantesApi.consultarPorId(Long.parseLong("198203"));
-
-        session.setAttribute("habitante", hb);
-        response.sendRedirect("consultaExpediente.jsp");
 
     }
 

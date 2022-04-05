@@ -3,6 +3,7 @@ servlets\autenticarNSS.class
 dominio\Persona.class
 autenticacion\AutenticacionUsuario.class
 persistencia\HabitanteAPIRest.class
+main\Main.class
 autenticacion\IAutenticacionUsuario.class
 dominio\LaboratorioQuimico.class
 dominio\Establecimiento.class

@@ -22,7 +22,7 @@
         <img src="imagenes/km.jpg" alt="foto_Carla" id="km">
         <br>
 
-        <form action="consultaExpediente.jsp">
+        <form action="consultaExpediente" method="POST">
             <button type="submit">Solicitar Acceso</button>
         </form>
     </body>

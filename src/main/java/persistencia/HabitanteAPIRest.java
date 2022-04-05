@@ -5,6 +5,7 @@ import dominio.Habitante;
 import dominio.Tutor;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class HabitanteAPIRest implements IHabitantesAPIRest {
@@ -15,9 +16,9 @@ public class HabitanteAPIRest implements IHabitantesAPIRest {
         this.listaHabitantes = new ArrayList<>();
         Expediente expediente = new Expediente();
         Tutor tutor = new Tutor();
-        this.listaHabitantes.add(new Habitante(1L, "Carla Morrison", "Villa ITSON, SON", 32, new byte[5], tutor, expediente, "198203"));
-        this.listaHabitantes.add(new Habitante(2L, "Juan Vazquez", "Urbi Villa, SON", 21, new byte[5], tutor, expediente, "159244"));
-        this.listaHabitantes.add(new Habitante(3L, "Mauricio Martinez", "Plano Oriente, SON", 28, new byte[5], tutor, expediente, "129384"));
+        this.listaHabitantes.add(new Habitante(1L, "Carla Morrison", "Villa ITSON, SON", 32, new byte[5], tutor, expediente, "198203", "CMASDF12345", "Femenino", new Date()));
+        this.listaHabitantes.add(new Habitante(2L, "Juan Vazquez", "Urbi Villa, SON", 21, new byte[5], tutor, expediente, "159244", "JUVAZ12345", "Masculino", new Date()));
+        this.listaHabitantes.add(new Habitante(3L, "Mauricio Martinez", "Plano Oriente, SON", 28, new byte[5], tutor, expediente, "129384", "MM523451", "Masculino", new Date()));
     }
 
     @Override
@@ -47,12 +48,15 @@ public class HabitanteAPIRest implements IHabitantesAPIRest {
 
     @Override
     public Habitante consultarPorId(Long idHabitante) {
-        int indice = this.listaHabitantes.indexOf(idHabitante);
-        if (indice == -1) {
-            return null;
+        Habitante habitanteAgregado;
+        for (int i = 0; i < this.listaHabitantes.size(); i++) {
+            if (this.listaHabitantes.get(i).getId() == idHabitante) {
+                habitanteAgregado = this.listaHabitantes.get(i);
+                return habitanteAgregado;
+            }
         }
-        Habitante habitanteAgregado = this.listaHabitantes.get(indice);
-        return habitanteAgregado;
+
+        return null;
     }
 
     @Override

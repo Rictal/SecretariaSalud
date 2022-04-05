@@ -11,7 +11,8 @@
     Habitante habitante = new Habitante();
 
     Habitante habitanteAux = (Habitante) session.getAttribute("habitante");
-
+    System.out.println("jsp: ");
+    System.out.println(habitanteAux);
     if (habitanteAux != null) {
         habitante = habitanteAux;
     }
@@ -32,27 +33,35 @@
                 <h3>Datos personales</h3>
                 <div id="divDaosPersonales">
 
-                    <label>Nombre: 
-                        <%habitante.getNombre();%>
-                    </label>
-
-                    <label>Edad:  
-                        <%habitante.getEdad();%>
-                    </label>
-
-                    <label>Direccion:  
-                        <%habitante.getDireccion();%>
-                    </label>
-
-                    <label>NSS:  
-                        <%habitante.getNumSeguroSocial();%>
-                    </label>
-
-                    <label>ID:  
-                        <%habitante.getId();%>
-                    </label>
+                    <%out.print("<label>Nombre: "
+                                + habitanteAux.getNombre()
+                                + "</label><br/><br/>");%>
 
 
+                    <%out.print("<label>Edad: "
+                                + habitanteAux.getEdad()
+                                + "</label><br/><br/>");%>
+
+                    <%out.print("<label>Direccion: "
+                                + habitanteAux.getDireccion()
+                                + "</label><br/><br/>");%>
+
+                        <%out.print("<label>NSS: "
+                                    + habitanteAux.getNumSeguroSocial()
+                                    + "</label><br/><br/>");%>
+
+                        <%out.print("<label>CURP: "
+                                    + habitanteAux.getCurp()
+                                    + "</label><br/><br/>");%>
+                                    
+                        <%out.print("<label>Sexo: "
+                                    + habitanteAux.getSexo()
+                                    + "</label><br/><br/>");%>
+                                    
+                        <%out.print("<label>Fecha de nacimiento: "
+                                    + habitanteAux.getFechaNacimiento()
+                                    + "</label><br/><br/>");%>
+                                    
                 </div>
                 <h3>Consultas medicas</h3>
                 <div>
@@ -64,13 +73,13 @@
                         </tr>
                         <tr>
                             <td>02/04/2022</td>
-                            <td>Dra. Mia</td>
-                            <td>Hospital La Raza</td>
+                            <td>Dra. Juan</td>
+                            <td>Hospital Sonora</td>
                         </tr>
                         <tr>
                             <td>04/04/2022</td>
-                            <td>Dr. Alex Marin</td>
-                            <td>Hospital Mamitas</td>
+                            <td>Dr. Martinez</td>
+                            <td>Hospital San Jose</td>
                         </tr>
                     </table>
                 </div>
