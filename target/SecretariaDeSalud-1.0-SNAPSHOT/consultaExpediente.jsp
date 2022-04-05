@@ -4,7 +4,19 @@
     Author     : l3tal
 --%>
 
+<%@page import="dominio.Habitante"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<%
+    Habitante habitante = new Habitante();
+
+    Habitante habitanteAux = (Habitante) session.getAttribute("habitante");
+
+    if (habitanteAux != null) {
+        habitante = habitanteAux;
+    }
+
+%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,12 +31,28 @@
             <div id="divIzquierda" class="caja1">
                 <h3>Datos personales</h3>
                 <div id="divDaosPersonales">
-                    <p><label>Nombre: Carla Morrison</label>
-                    <p><label>Edad: 22</label>
-                    <p><label >Fecha nac; 04/20/1999</label>
-                    <p><label>CURP: CMUP04201999ISRGZ</label>
-                    <p><label>NSS: 51624522</label>
-                    <p><label>Sexo: Mujer</label>
+
+                    <label>Nombre: 
+                        <%habitante.getNombre();%>
+                    </label>
+
+                    <label>Edad:  
+                        <%habitante.getEdad();%>
+                    </label>
+
+                    <label>Direccion:  
+                        <%habitante.getDireccion();%>
+                    </label>
+
+                    <label>NSS:  
+                        <%habitante.getNumSeguroSocial();%>
+                    </label>
+
+                    <label>ID:  
+                        <%habitante.getId();%>
+                    </label>
+
+
                 </div>
                 <h3>Consultas medicas</h3>
                 <div>
@@ -51,7 +79,7 @@
             <div id="divDerecha" class="caja2">
                 <h3>Cita medica</h3>
                 <div>
-                    
+
                 </div>
             </div>
 

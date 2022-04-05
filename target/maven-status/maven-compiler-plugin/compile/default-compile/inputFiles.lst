@@ -1,13 +1,15 @@
-D:\Alejandro respaldo\SecretariaSalud\src\main\java\autenticacion\IAutenticacionUsuario.java
-D:\Alejandro respaldo\SecretariaSalud\src\main\java\dominio\Habitante.java
-D:\Alejandro respaldo\SecretariaSalud\src\main\java\persistencia\IHabitantesAPIRest.java
-D:\Alejandro respaldo\SecretariaSalud\src\main\java\dominio\TrabajadorSalud.java
-D:\Alejandro respaldo\SecretariaSalud\src\main\java\dominio\Establecimiento.java
-D:\Alejandro respaldo\SecretariaSalud\src\main\java\dominio\Expediente.java
-D:\Alejandro respaldo\SecretariaSalud\src\main\java\dominio\Tutor.java
-D:\Alejandro respaldo\SecretariaSalud\src\main\java\servlets\autenticarSesion.java
-D:\Alejandro respaldo\SecretariaSalud\src\main\java\dominio\LaboratorioQuimico.java
-D:\Alejandro respaldo\SecretariaSalud\src\main\java\persistencia\HabitanteAPIRest.java
-D:\Alejandro respaldo\SecretariaSalud\src\main\java\dominio\Hospital.java
-D:\Alejandro respaldo\SecretariaSalud\src\main\java\dominio\Persona.java
-D:\Alejandro respaldo\SecretariaSalud\src\main\java\autenticacion\AutenticacionUsuario.java
+C:\Users\hector\Desktop\SecretariaSalud\SecretariaSalud\src\main\java\persistencia\IHabitantesAPIRest.java
+C:\Users\hector\Desktop\SecretariaSalud\SecretariaSalud\src\main\java\persistencia\HabitanteAPIRest.java
+C:\Users\hector\Desktop\SecretariaSalud\SecretariaSalud\src\main\java\dominio\Tutor.java
+C:\Users\hector\Desktop\SecretariaSalud\SecretariaSalud\src\main\java\servlets\autenticarNSS.java
+C:\Users\hector\Desktop\SecretariaSalud\SecretariaSalud\src\main\java\autenticacion\AutenticacionUsuario.java
+C:\Users\hector\Desktop\SecretariaSalud\SecretariaSalud\src\main\java\dominio\Hospital.java
+C:\Users\hector\Desktop\SecretariaSalud\SecretariaSalud\src\main\java\servlets\consultaExpediente.java
+C:\Users\hector\Desktop\SecretariaSalud\SecretariaSalud\src\main\java\autenticacion\IAutenticacionUsuario.java
+C:\Users\hector\Desktop\SecretariaSalud\SecretariaSalud\src\main\java\dominio\Persona.java
+C:\Users\hector\Desktop\SecretariaSalud\SecretariaSalud\src\main\java\dominio\Habitante.java
+C:\Users\hector\Desktop\SecretariaSalud\SecretariaSalud\src\main\java\dominio\Expediente.java
+C:\Users\hector\Desktop\SecretariaSalud\SecretariaSalud\src\main\java\dominio\Establecimiento.java
+C:\Users\hector\Desktop\SecretariaSalud\SecretariaSalud\src\main\java\dominio\LaboratorioQuimico.java
+C:\Users\hector\Desktop\SecretariaSalud\SecretariaSalud\src\main\java\dominio\TrabajadorSalud.java
+C:\Users\hector\Desktop\SecretariaSalud\SecretariaSalud\src\main\java\servlets\autenticarSesion.java

@@ -1,4 +1,5 @@
 dominio\Hospital.class
+servlets\autenticarNSS.class
 dominio\Persona.class
 autenticacion\AutenticacionUsuario.class
 persistencia\HabitanteAPIRest.class
@@ -9,5 +10,6 @@ dominio\Habitante.class
 dominio\Tutor.class
 persistencia\IHabitantesAPIRest.class
 servlets\autenticarSesion.class
+servlets\consultaExpediente.class
 dominio\Expediente.class
 dominio\TrabajadorSalud.class

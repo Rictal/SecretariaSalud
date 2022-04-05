@@ -21,12 +21,13 @@
         <h2>Ingrese su usuario y contraseña</h2>
         <div id="container">
             <form action="autenticarSesion" method="POST">
+                
                 <label for="name">Usuario:</label>
                 <input type="text" name="usuario">
-                
+
                 <p><label for="username">Contraseña:</label>
                     <input type="password" name="contrasenia">
-                    
+
                     <br/><br/>
                     <button id="btnAceptar">Acceder</button>
             </form>       

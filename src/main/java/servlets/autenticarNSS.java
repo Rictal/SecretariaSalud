@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class autenticarSesion extends HttpServlet {
+public class autenticarNSS extends HttpServlet {
 
     IAutenticacionUsuario autenticarUsuario;
 
@@ -18,18 +18,16 @@ public class autenticarSesion extends HttpServlet {
 
         this.autenticarUsuario = new AutenticacionUsuario();
 
-        String usuario = request.getParameter("usuario");
-        String contrasenia = request.getParameter("contrasenia");
+        String nss = request.getParameter("nss");
 
-        if (this.autenticarUsuario.autenticarTrabajadorSalud(usuario, contrasenia)) {
-            response.sendRedirect("accesoNSS.jsp");
+        if (this.autenticarUsuario.autenticarHabitante(nss)) {
+            response.sendRedirect("accesoDactilar.jsp");
         } else {
-            response.sendRedirect("index.jsp");
+            response.sendRedirect("accesoNSS.jsp");
         }
-
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+// <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
      *

@@ -4,9 +4,25 @@
         <servlet-name>autenticarSesion</servlet-name>
         <servlet-class>servlets.autenticarSesion</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>autenticarNSS</servlet-name>
+        <servlet-class>servlets.autenticarNSS</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>consultaExpediente</servlet-name>
+        <servlet-class>servlets.consultaExpediente</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>autenticarSesion</servlet-name>
         <url-pattern>/autenticarSesion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>autenticarNSS</servlet-name>
+        <url-pattern>/autenticarNSS</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>consultaExpediente</servlet-name>
+        <url-pattern>/consultaExpediente</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

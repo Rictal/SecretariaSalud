@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package autenticacion;
 
 import dominio.Habitante;
@@ -10,10 +5,6 @@ import dominio.TrabajadorSalud;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author bryan
- */
 public class AutenticacionUsuario implements IAutenticacionUsuario {
 
     private final List<Habitante> listaHabitantes;
@@ -37,8 +28,11 @@ public class AutenticacionUsuario implements IAutenticacionUsuario {
     @Override
     public boolean autenticarHabitante(String numSocial) {
         for (int i = 0; i < this.listaHabitantes.size(); i++) {
-            if (this.listaHabitantes.get(i).getNumSeguroSocial().equalsIgnoreCase(numSocial));
-            return true;
+            if (numSocial.equalsIgnoreCase(this.listaHabitantes.get(i).getNumSeguroSocial())) {
+                System.out.println("LISTA NSS: " + this.listaHabitantes.get(i).getNumSeguroSocial() + "\n" + "   num: " + numSocial);
+                System.out.println("Si entro ");
+                return true;
+            }
         }
         return false;
     }
